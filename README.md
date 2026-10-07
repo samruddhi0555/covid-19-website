@@ -17,3 +17,4 @@ HTML, CSS, JavaScript, Node.js, Express, MongoDB (Mongoose)
 3. Start MongoDB, then run `node server.js`
 4. Open http://localhost:3000
 
+Copy .env.example to .env and set your own SESSION_SECRET."

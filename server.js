@@ -1,10 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const session = require("express-session");
-
+require("dotenv").config();
 const app = express();
 app.use(express.json());
-app.use(session({ secret: "covid-secret", resave: false, saveUninitialized: false }));
+app.use(session({ secret: process.env.SESSION_SECRET, resave: false, saveUninitialized: false }));
 app.use(express.static("public"));
 
 app.use("/api", require("./routes/auth"));
