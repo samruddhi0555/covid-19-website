@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COVID-19 Information</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>COVID-19 Information</h1>
+
+  <section>
+    <h2>Symptoms</h2>
+    <p>Fever, cough, tiredness, loss of taste or smell, difficulty breathing.</p>
+    <h2>Prevention</h2>
+    <p>Wear a mask, wash hands often, keep distance, and get vaccinated.</p>
+  </section>
+
+  <section>
+    <h2>Register</h2>
+    <input id="rn" placeholder="Name">
+    <input id="re" placeholder="Email">
+    <input id="rp" placeholder="Phone (10 digits)">
+    <input id="rw" type="password" placeholder="Password (8+, upper, lower, digit)">
+    <button onclick="register()">Register</button>
+  </section>
+
+  <section>
+    <h2>Login</h2>
+    <input id="le" placeholder="Email">
+    <input id="lw" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <button onclick="logout()">Logout</button>
+  </section>
+
+  <section>
+    <h2>Comments</h2>
+    <textarea id="ct" placeholder="Write a comment"></textarea>
+    <button onclick="addComment()">Post</button>
+    <div id="list"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
